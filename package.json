@@ -1,9 +1,9 @@
 {
-  "name": "dealfinderbg-api",
+  "name": "dealfinder-bg-api",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "dependencies": {
-    "twilio": "^4.21.0"
+    "twilio": "^5.3.1"
   }
 }
