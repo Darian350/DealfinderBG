@@ -1,17 +1,4 @@
 import twilio from 'twilio';
-export default async function handler(req, res) {
-  // --- CORS freischalten ---
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-
-  // Wenn der Browser zuerst "OPTIONS" sendet (normal bei CORS)
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
-
-  // --- ab hier bleibt dein bisheriger Code ---
-
 function setCORS(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
